@@ -1,0 +1,527 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+/* vide style----------------------------------------------------------- */
+/* Set the container to be responsive */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+/* Set the video to fill the container */
+.video-container video {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+/* end for video style----------------------------------------------------------- */
+
+/* style about beranda----------------------------------------------------------- */
+
+/* about................................................... */
+.container_card {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 10% 0 10% ;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.con1-h3{
+  border-bottom: 5px dashed rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+
+.con2-h3{
+  display: flex;
+  justify-content: right;
+  border-bottom: 5px dashed rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+
+div.b_container2 button {
+  float: right;
+}
+
+.b_container1{
+  position: relative;
+  right: -60px;
+  z-index: 2;
+}
+
+.b_container2{
+  position: relative;
+  left: -60px;
+  z-index: 2;
+}
+
+
+
+.card_p{
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display:inline-flex;
+  height: fit-content;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about {
+  padding: 10px;
+  text-align: justify;
+  overflow: hidden;
+  position: relative;
+  font-size: 80%;
+}
+
+/* catalog.............................................. */
+
+.container-catalog{
+  display: block;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 10% 0 10% ;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+h1{
+  /* display: flex; */
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5rem;
+  padding-bottom: 20px;
+}
+.catalog-card{
+  margin-top: 20rem;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-cat1{
+  background-image: url('./aset/md-3.png');
+  background-size: cover;
+  width: 25%;
+  height: 500px;
+  /* display: flex; */
+  margin-left: 5%;
+  position: relative;
+  padding: 10px;
+}
+
+.card-cat2{
+  background-image: url('./aset/md-3.png');
+  background-size: cover;
+  width: 25%;
+  height: 500px;
+  margin-left: 5%;
+  position: relative;
+  padding: 10px;
+}
+
+.card-cat3{
+  background-image: url('./aset/md-3.png');
+  background-size: cover;
+  width: 25%;
+  height: 500px;
+  margin-left: 5%;
+  position: relative;
+  padding: 10px;
+  
+  
+}
+
+
+.h3-Catalog{
+  position: absolute;
+  top: 0;
+  left: 35%;
+  white-space: nowrap;
+  padding-top: 4rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.p-catalog{
+  text-align: center;
+  margin-top: 5.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.Catalog-button{
+  display: block;
+  position: absolute;
+  top: 680%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* after catalog--------------------------------------------- */
+
+.after-catalog{
+  margin: 0%;
+  padding: 0%;
+  position: absolute;
+  top:133%;
+  left: 0%;
+}
+
+.container-kusen{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.kusen{
+  display: grid;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.imgkusen-top, .imgkusen{
+  display: grid;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.imgkusen-buttom{
+  display: inline-flex;
+}
+.kusenh3{
+  padding-left: 127px;
+}
+
+.kusenh1{
+  white-space: nowrap;
+}
+
+.btn-kusen{
+  width: 15rem;
+  margin-left: 15.5rem;
+  margin-bottom: 5rem;
+}
+
+/* kebijakan manajemen----------------------------------------------------------- */
+.container-mng{
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mng-description{
+  align-items: flex-start;
+  width: 40%;
+  padding-left: 30px;
+  /* text-align: justify; */
+}
+
+.h3-mng{
+  margin-left: 60%;
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+
+.img-mng{
+  padding-top: 9px;
+}
+
+/* reason----------------------------------------------------------- */
+.container-rsn{
+  width: 80%;
+  margin-top: 3rem;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mng-description ul li {
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+/* setifikat---------------------------------------------------------- */
+.container-sertifikasi{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 7rem;
+  justify-content: center;
+}
+
+.Sertifikasi{
+  display: flex;
+}
+
+.img-sertifikat{
+  display: flex;
+  width: 60%;
+}
+
+.rst-ket{
+  width: 35%;
+  
+}
+
+/* pelayanan----------------------------------------------------------------------- */
+.container-layananan{
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 25%;
+  margin-top: 7rem;
+}
+
+.layanan, .layanan-blue{
+  color: white;
+  background-color: rgb(13, 9, 73);
+}
+
+.layanan-blue{
+  background-color: rgb(40, 117, 117);
+}
+
+.layanan-blue div, .layanan div{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;  
+}
+
+.layanan p, .layanan-blue p{
+  display: flex;
+  padding: 0 2rem 2rem 2rem;
+  text-align: left;
+}
+
+.layanan h4, .layanan-blue h4{
+  padding-bottom: 5px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* portfolio------------------------------------------------------------------------ */ */
+.cont_portofolio{
+  width: 80%;
+  margin-top: 10rem;
+}
+
+.splitimg{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  margin-top: 5rem;
+}
+
+.portfolio-h1{
+  position: relative;
+}
+
+.port-img{
+  display: flex;
+ 
+}
+
+.port-img img{
+  padding: 10px;
+}
+
+/* end style about beranda----------------------------------------------------------- */
+
+
+/* Adjust the container padding for smaller screens */
+@media only screen and (max-width: 800px) {
+  .nabar{
+    z-index: 1;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+  }
+
+  .container_card{
+    display:flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-bottom: 10rem;
+  }
+  .b_container1, .b_container2{
+    position: static;
+    top: 0;
+    float: left;
+  }
+
+  .con2-h3 {
+    justify-content: left;
+  }
+
+ div.b_container2 button, div.b_container1 button {
+    float: none;
+    position: relative;
+    left: 25%;
+  }
+
+
+/* catalog.............................................. */
+.container-catalog{
+  position: relative;
+  display:block;
+}
+
+.catalog-card{
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10rem; */
+  /* width: 50vh; */
+}
+
+.card-cat1, .card-cat2, .card-cat3{
+  width: 40vh;
+  height: 40vh;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+
+.p-catalog{
+  margin-top: 4rem;
+  padding-top: 0;
+}
+
+.h3-Catalog{
+  margin-top: 2rem;
+  padding-top: 0;
+}
+
+
+   
+}
+
+/* footer///////////////////////////////////////////////////////////////////////////// */
+.footer{
+  margin-top: 2rem;
+  background-color: rgb(39, 74, 150);
+  color: white;
+}
+
+.fter-container{
+  display: grid;
+  justify-content: center;
+}
+
+.tlp-con h1{
+  width: 88.5%;
+  margin-left: 18.7rem;
+  padding-right: 4rem;
+  position: static;
+  padding-bottom: 3px;
+  color: white;
+  border-bottom: 3px dashed white;
+}
+
+.button-footer{
+  width: 160px;
+  height: 40px;
+  font-size: larger;
+}
+
+.phone-container{
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.konimg{
+  margin-right: 1rem;
+  padding-top: 1.5rem;
+}
+
+.email-container{
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ps-wa{
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+
+.ps-wa p{
+ padding-left: 5px; 
+ margin-right: 2rem;
+}
+
+.email-container, .address-container{
+  justify-content: space-between;
+}
+
+.email-img, .address-img, .contac-img{
+  display: flex;
+}
+
+.email-img p, .address-img p{
+  margin-left: 2rem;
+}
+
+.email-img p{
+  padding-top: 10px;
+}
+
+.address-container{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.address-img p{
+  width: 250px  
+}
+
+.address-img img{
+  margin-top: 7px;
+}
+
+.crtby{
+  margin-left: 15%;
+  width: 70%;
+  border-top: 1px solid white;
+  padding-bottom: 1.5rem;
+}

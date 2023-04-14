@@ -1,0 +1,285 @@
+.h1-tentang h1{
+    background-color: rgb(39, 74, 150);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5em;
+}
+
+.container-tentang, .rmh-deskripsi{
+    font-size: larger;
+    text-align: center;
+    padding: 2rem 15rem;
+}
+
+.visi{
+    background-color: rgba(0, 0, 0, 0.445);
+    padding: 3px 15px;
+}
+
+.rmh-ling{
+    margin: 1rem 15rem 0rem 15rem;
+    border-bottom: dashed black;
+}
+
+.rmh-deskripsi{
+    padding-top: 1rem;
+}
+
+.list-rmh{
+    margin-top: 0.2rem;
+    padding-left: 1rem;
+    text-align: left;
+    list-style-type: disc;
+}
+
+/* slider=============================================================================== */
+
+.sliderimg-slider { 
+	border: 10px solid #efefef; 
+	position: relative; 
+	overflow: hidden; 
+	background: #efefef;
+}
+ 
+.sliderimg-slider { 
+	margin:20px auto;
+	width: 768px;
+	height: 450px; 
+}
+ 
+.img-slider img { 
+	width: 768px;
+	height: 450px; 
+	float: left;
+}
+ 
+.img-slider { 
+	position: absolute; 
+	width:3900px;  
+
+/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+    animation-name:slider;
+    animation-duration:16s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    -webkit-animation-name:slider;
+    -webkit-animation-duration:16s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:slider;
+    -moz-animation-duration:16s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count:infinite;
+    -o-animation-name:slider;
+    -o-animation-duration:16s;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count:infinite;
+}
+
+.img-slider:hover { 
+	-webkit-animation-play-state:paused; 
+	-moz-animation-play-state:paused; 
+	-o-animation-play-state:paused; 
+	animation-play-state:paused; 
+}
+
+.img-slider img { 
+	float: right; 
+}
+ 
+.sliderimg-slider:after { 
+	font-size: 150px; 
+	position: absolute; 
+	z-index: 12; 
+	color: rgba(255,255,255, 0); 
+	left: 300px; top: 80px; 
+	-webkit-transition: 1s all ease-in-out; 
+	-moz-transition: 1s all ease-in-out; 
+	transition: 1s all ease-in-out; 
+}
+ 
+.sliderimg-slider:hover:after { 
+	color: rgba(255,255,255, 0.6);  
+}
+ 
+ 
+ 
+ @-moz-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+}  
+ 
+@-webkit-keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}       
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0;
+	}   	
+	100% {
+		left: 0; opacity: 0; 
+	}
+} 
+ 
+ 
+@keyframes slider {     
+	0% {
+		left: 0; opacity: 0; 
+	}     
+	2% {
+		opacity: 1; 
+	}     
+	20% {
+		left: 0; opacity: 1; 
+	}     
+	21% {
+		opacity: 0; 
+	}     
+	24% {
+		opacity: 0; 
+	}     
+	25% {
+		left: -768px; opacity: 1; 
+	}     
+	45% {
+		left: -768px; opacity: 1; 
+	}     
+	46% {
+		opacity: 0; 
+	}     
+	48% {
+		opacity: 0; 
+	}     
+	50% {
+		left: -1536px; opacity: 1; 
+	}     
+	70% {
+		left: -1536px; opacity: 1; 
+	}     
+	72% {
+		opacity: 0; 
+	}     
+	74% {
+		opacity: 0; 
+	}    
+	75% {
+		left: -2304px; opacity: 1; 
+	}   	
+	95% {
+		left: -2304px; opacity: 1; 
+	}   	
+	97% { 
+		left: -2304px; opacity: 0; 
+	} 
+ 
+	100% {
+		left: 0; opacity: 0; 
+	}
+}
+
+.phone-container, .email-container{
+    margin-top: 1rem;
+}
+
+.knt-container{
+    margin-bottom: 1rem;
+}
+.p-wa{
+   padding-left: 2rem;
+}
+
+.pemark{
+    padding-top: 15px;
+}

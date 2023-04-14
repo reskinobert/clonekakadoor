@@ -1,0 +1,74 @@
+.footer{
+    /* position: static; */
+    display: block;
+    background-color: rgb(39, 74, 150);
+    color: white;
+}
+
+.fter-container{
+    display: grid;
+    justify-content: center;
+}
+
+.tlp-con h1{
+    padding-bottom: 3px;
+    border-bottom: 3px dashed white;
+}
+
+.button-footer{
+    width: 160px;
+    height: 40px;
+    font-size: larger;
+    margin-left: 2rem;
+}
+
+.phone-container, .email-container{
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ps-wa{
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 1rem; */
+}
+
+
+
+.email-container, .address-container, .phone-container{
+    justify-content: space-between;
+}
+
+.email-img, .address-img, .contac-img{
+    display: flex;
+}
+
+.email-img p{
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.address-container{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.address-img p{
+    width: 250px;
+    margin-left: 2rem;
+}
+
+.address-img img{
+    margin-top: 7px;
+}
+
+.crtby{
+    margin-left: 15%;
+    width: 70%;
+    border-top: 1px solid white;
+    padding-bottom: 1.5rem;
+}
