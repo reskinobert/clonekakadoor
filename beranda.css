@@ -5,14 +5,14 @@ button a{
 
 /* video style----------------------------------------------------------- */
 .video-container{
-    display: grid;
-    align-items: center;
-    justify-content: center;  
-    margin: 3rem;
+    display: grid; 
+    margin: 3rem 10rem 3rem 10rem;
 }
 
 .video-container video{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -95,15 +95,14 @@ div.b_container2 button {
 
 .catalog-card{
   display: flex;
-  width: 1000px;
-  margin: 0 20rem 2 20rem;
+  margin: 0 25rem 0rem 25rem;
 }
 
 .card-cat1{
   background-image: url('./aset/sc-napo.png');
   background-size: cover;
-  width: 20rem;
-  height: 50rem;
+  width: 25%;
+  height: 400px;
   padding: 25px;
   margin-top: 2rem;
 }
@@ -111,8 +110,8 @@ div.b_container2 button {
 .card-cat2{
   background-image: url('./aset/nc-nap.png');
   background-size: cover;
-  width: 20rem;
-  height: 50rem;
+  width: 25%;
+  height: 400px;
   padding: 25px;
   margin: 2rem;
 }
@@ -120,8 +119,8 @@ div.b_container2 button {
 .card-cat3{
   background-image: url('./aset/md-2.png');
   background-size: cover;
-  width: 20rem;
-  height: 50rem;
+  width: 25%;
+  height: 400px;
   padding: 25px;
   margin-top: 2rem;
 }
@@ -178,65 +177,61 @@ div.b_container2 button {
 }
 
 .btn-kusen{
-  width: 15rem;
-  margin-left: 15.5rem;
-  margin-bottom: 5rem;
+  margin: 0 20rem 0 20rem;
 }
 
 /* kebijakan manajemen----------------------------------------------------------- */
 .container-mng{
-  width: 80%;
-  margin-left: 10%;
   display: flex;
   justify-content: space-between;
 }
 
 .mng-description{
-  align-items: flex-start;
-  width: 40%;
-  padding-left: 30px;
-  /* text-align: justify; */
+  margin: 0rem 13rem 2rem 0rem;
 }
 
 .h3-mng{
-  margin-left: 60%;
   white-space: nowrap;
   padding-bottom: 15px;
 }
 
-.img-mng{
+.img-mng img{
   padding-top: 9px;
+  margin: 1rem 13rem;
 }
 
 /* reason----------------------------------------------------------- */
 .container-rsn{
-  width: 80%;
-  margin-top: 3rem;
-  margin-left: 10%;
+  margin: 3rem 13rem;
   display: flex;
   justify-content: space-between;
 }
 
-.mng-description ul li {
+.reason-description ul li {
   list-style-position: outside;
   list-style-type: disc;
+  padding-left: 5px;
+}
+
+.reason-description ul{
+  margin: 1rem 5rem 0rem 2rem;
 }
 
 /* setifikat---------------------------------------------------------- */
 .container-sertifikasi{
   display: flex;
-  margin: 5rem 15rem 0 15rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.Sertifikasi{
-  display: flex;
+  margin: 5rem 15rem ;
+  /* justify-content: space-around; */
 }
 
 .img-sertifikat{
   display: flex;
-  width: 100%;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.img-sertifikat img{
+  max-width: 20%;
 }
 
 .h3-rst{
@@ -244,10 +239,7 @@ div.b_container2 button {
   font-size: larger;
 }
 
-.rst-ket{
-  width: 40%;
-  
-}
+
 
 /* pelayanan----------------------------------------------------------------------- */
 .container-layananan{
@@ -317,72 +309,168 @@ div.b_container2 button {
 /* end style about beranda----------------------------------------------------------- */
 
 /* Adjust the container padding for smaller screens */
-@media only screen and (max-width: 600px) {
-  .nabar{
-    z-index: 1;
-  }
+@media only screen and (max-width: 700px) {
 
-  .video-container video {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
+  .video-container{
+    width: auto;
+    margin: 3rem;
   }
-
+   
   .container_card{
-    display:flex;
-    flex-direction: column;
-    z-index: 2;
-    margin-bottom: 10rem;
-  }
-  .b_container1, .b_container2{
-    position: static;
-    top: 0;
-    float: left;
+    display: block;
+    margin: 3rem 3rem 4rem 3rem;
   }
 
-  .con2-h3 {
-    justify-content: left;
-  }
-
- div.b_container2 button, div.b_container1 button {
-    float: none;
+  .b_container1{
     position: relative;
-    left: 25%;
+    right: 0;
   }
 
+  .b_container2{
+    position: relative;
+    left: 0;
+  }
 
-/* catalog.............................................. */
-.container-catalog{
-  position: relative;
-  display:block;
+  .card_image{
+    margin: 1rem 0;
+  }
+
+  .container-catalog, .catalog-card{
+    display: block;
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .card-cat3, .card-cat2, .card-cat1{
+    margin: 1rem 0;
+    width: auto;
+  }
+
+  .kusenh1{
+    white-space: normal;
+  }
+
+  .imgkusen-top{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  .imgkusen-top .kusenh3{
+    padding-left: 3rem;
+  }
+
+  .imgkusen-buttom{
+    display: block;
+  }
+
+  .btn-kusen{
+    display: flex;
+    /* margin: 0 0 0 4.5rem; */
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .container-mng, .container-rsn{
+    display: block;
+    font-size: smaller;
+  }
+
+  .img-mng img{
+    max-width: 16rem;
+    height: auto;
+    margin: 0rem 0rem 0rem 4rem;
+  }
+
+  .mng-description{
+    margin: 3rem 3rem 0 3rem;
+  }
+
+  .container-rsn {
+    margin: 3rem;
+  }
+
+  .reason-description ul {
+    margin: 0rem 0rem 1rem 2rem;
+  }
+  .img-rsn img{
+    max-width: 16rem;
+    height: auto;
+    margin: 0rem 0rem 0rem 1rem;
+  }
+
+  .container-sertifikasi {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem;
 }
 
-.catalog-card{
+.img-sertifikat img{
+  max-width: 30%;
+  margin: 0rem 0rem 1rem 0.5rem;
+}
+
+.container-layananan{
   display: flex;
   flex-direction: column;
-  /* margin-top: 10rem; */
-  /* width: 50vh; */
 }
 
-.card-cat1, .card-cat2, .card-cat3{
-  width: 40vh;
-  height: 40vh;
-  margin-bottom: 1rem;
-  margin-left: 0;
-}
-
-.p-catalog{
-  margin-top: 4rem;
-  padding-top: 0;
-}
-
-.h3-Catalog{
+.container-layananan{
   margin-top: 2rem;
-  padding-top: 0;
+  margin-left: 20%;
+  width: 60%;
 }
-   
+
+.layanan h4, .layanan-blue h4{
+  margin-bottom: 1rem;
+}
+
+.cont_portofolio{
+  margin: 1rem 2rem;
+  padding: 2rem;
+}
+
+.splitimg{
+  display: flex;
+  flex-direction: column;
+}
+
+.port-img img{
+  padding: 0.5rem;
+}
+
+
+.fter-container{
+  width: 100%;
+}
+
+.phone-container, .email-container, .address-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.tlp-con h2{
+  font-size: smaller;
+  padding-left: 1rem;
+}
+
+div.konimg {
+  margin-right: 0rem;
+  padding-top: 1.5rem;
+}
+
+.button-footer{
+  margin-top: 1.3rem;
+}
+
+div.email-img, div.address-img{
+  margin-top: 1rem;
+  align-self: flex-start;
+}
+
 }
 
 /* footer///////////////////////////////////////////////////////////////////////////// */
