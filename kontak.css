@@ -1,0 +1,52 @@
+.kontak-container{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem  15rem;
+    align-items: center;
+    font-size: larger;
+    
+}
+
+.input-kontak-all{
+  margin: 2rem 0 2rem 0;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+}
+
+.kontak input{
+    width: 320px;
+    height: 40px;
+    border: solid 2px;
+    padding: 5px;
+}
+
+
+.kontak{
+    display: flex;
+    margin-right: 10px;
+}
+
+.pesan textarea{
+    width: 664px;
+    height: 200px;
+    border: solid 2px;
+    text-align: start;
+}
+
+
+
+/* tambahanfooter */
+.phone-container, .email-container{
+    margin-top: 1rem;
+}
+
+.knt-container{
+    margin-bottom: 1rem;
+}
+.p-wa{
+   padding-left: 2rem;
+}
+
+.pemark{
+    padding-top: 15px;
+}

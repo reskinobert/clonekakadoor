@@ -1,0 +1,108 @@
+.Keunggulan-doordetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.deskripsi-door-detail{
+    width: 40%;
+    padding-left: 2rem;
+}
+
+.deskripsi-door-detail h1{
+    border-bottom: 4px solid;
+}
+
+.detaiparagraf{
+    padding-top: 1rem;
+}
+
+/* video--------------------------------------------------------------- */
+
+.video-container-door{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.video-container-door video{
+        position: relative;
+        top: 10%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+}
+
+/* sc series--------------------------------------------------------------- */
+.SC-Series-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.text-sc-pintu{
+    max-width: 50%;
+    display: block;
+    flex-direction: column;
+    margin-right: 33rem;
+    align-items: start;
+}
+
+.text-nc-pintu{
+    max-width: 45%;
+    display: block;
+    flex-direction: column;
+    margin-right:28.1rem;
+    align-items: start;
+}
+
+.text-sc-pintu h1{
+    width: 40%;
+    border-bottom: 4px solid;
+    margin-bottom: 7px;
+}
+
+.sc-pintu-con{
+    display: flex;
+}
+
+.sc-pitu-tentang{
+    font-size: smaller;
+}
+
+.sc-pitu-isi{
+    margin: 1rem;
+}
+.sc-ukuran-pintu {
+    display: flex;
+}
+.sc-nilai-pintu{
+    padding: 2px;
+}
+
+.sc-ukuran-judul{
+    font-weight: bolder;
+}
+
+.img-pilihan-warna{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+    margin: 2rem;
+}
+
+
+
+
+/* tambahanfooter--------------------------------------------------------------- */
+.phone-container, .email-container{
+    margin-top: 1rem;
+}
+
+.knt-container{
+    margin-bottom: 1rem;
+}
+.p-wa{
+   padding-left: 2rem;
+}
+
+.pemark{
+    padding-top: 15px;
+}

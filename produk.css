@@ -1,0 +1,181 @@
+
+.produk-container{
+    margin: 2rem 23rem 2rem 23rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produkdoor-img{
+    width: 12rem;
+    height: auto;
+}
+
+.produkdoor-img img{
+    max-width: 100%;
+    max-height: auto;
+    display: block; 
+    margin: auto; 
+  }
+
+.door-produk h1{
+    width: 40%;
+    text-align: right;
+    border-bottom: 2px solid;
+}
+
+.formargin{
+    width: 60%;
+}
+
+.door-produk{
+  display: flex;
+  align-items: right;
+} 
+
+.deskripsi-pproduk{
+    width: 27rem;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0 2rem 0;
+}
+
+.deskripsi-pproduk{
+    text-align: justify;
+}
+
+.carddoor-produk{
+    text-align: center;
+}
+
+.carddoor-produk a{
+    font-size: x-large;
+    color: white;
+    padding: 0.5em 0.9em;
+    background-color: rgb(37, 37, 134);
+}
+
+
+/* .kusen-produk/////////////////////////////////////////////////////////// */
+.produk-container-kusen{
+    margin: 4rem 10rem 2rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produkkusen-img{
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+.produkkusen-img img{
+    max-width: 100%;
+    display: block; 
+    margin: auto; 
+  }
+
+.kusen-produk h1{
+    width: 55%;
+    text-align: left;
+    border-bottom: 2px solid;
+}
+
+/* .formargin{
+    width: 60%;
+} */
+
+.kusen-produk{
+  display: flex;
+  align-items: right;
+} 
+
+.deskripsi-kproduk{
+    width: 33rem;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0 2rem 0;
+}
+
+.deskripsi-kproduk{
+    text-align: justify;
+}
+
+.cardkusen-produk{
+    text-align: center;
+}
+
+.cardkusen-produk a{
+    font-size: x-large;
+    color: white;
+    padding: 0.5em 0.9em;
+    background-color: rgb(37, 37, 134);
+}
+
+
+/* <!-- marketplace/////////////////////////////////////////////////////////////////// --> */
+
+.mplace-container{
+    margin: 4rem 15rem 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+.judul-marketplace{
+    width: 50%;
+    border-bottom: 2px solid;
+}
+
+.link-marketplace{
+    align-items: center;
+}
+
+.baris-marketplace{
+    width: 100rem;
+    display: flex;
+    /* justify-content: center; */
+    /* margin: 0px; */
+}
+
+.kolom-mplace{
+    max-width: 25%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.kolom-mplace h5{
+    max-width: 30%;   
+}
+
+.deskripsi-mplace{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.deskripsi-mplace p{
+    display: flex;
+    font-size: smaller;
+    max-width: 50%;
+    text-align: left;
+}
+
+/* <!-- socialmedia/////////////////////////////////////////////////////////////////////////////// --> */
+
+/* tambahanfooter */
+.phone-container, .email-container{
+    margin-top: 1rem;
+}
+
+.knt-container{
+    margin-bottom: 1rem;
+}
+.p-wa{
+   padding-left: 2rem;
+}
+
+.pemark{
+    padding-top: 15px;
+}

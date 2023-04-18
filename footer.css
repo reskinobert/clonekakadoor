@@ -20,6 +20,8 @@
     height: 40px;
     font-size: larger;
     margin-left: 2rem;
+    background-color: white;
+    color: rgb(39, 74, 150);;
 }
 
 .phone-container, .email-container{
