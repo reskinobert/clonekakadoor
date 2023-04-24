@@ -133,7 +133,7 @@ div.dropdown-content{
 
   .navbar-links {
     display: none;
-    /* height: fit-content; */
+    height: fit-content;
   }
 
   .navbar-toggle {
