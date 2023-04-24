@@ -178,7 +178,7 @@ div.dropdown-content{
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: fit-content;
+    height: 80vh;
     z-index: 11;
   }
 
@@ -188,6 +188,7 @@ div.dropdown-content{
     text-align: center;
     padding: 10px;
     border-bottom: 1px solid #eee;
+    max-height: 10%;
   }
 
   .navbar-links.show a {
