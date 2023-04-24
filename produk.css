@@ -1,13 +1,19 @@
+*{
+    overflow-x: hidden;
+}
 
 .produk-container{
-    margin: 2rem 23rem 2rem 23rem;
+    width: 60vw;
+    margin: 3rem auto;
     display: flex;
     justify-content: space-between;
+    gap: 3rem;
 }
 
 .produkdoor-img{
-    width: 12rem;
+    width: 30vh;
     height: auto;
+    margin-right: 2rem;
 }
 
 .produkdoor-img img{
@@ -17,55 +23,57 @@
     margin: auto; 
   }
 
+.carddoor-produk{
+    display: flex;
+    width: 40vw;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+}
+
+div.door-produk{
+    width: 60%;
+    margin-right: 1rem;
+  } 
+
 .door-produk h1{
-    width: 40%;
+    max-width: 100%;
     text-align: right;
     border-bottom: 2px solid;
 }
 
-.formargin{
-    width: 60%;
-}
-
-.door-produk{
-  display: flex;
-  align-items: right;
-} 
-
 .deskripsi-pproduk{
-    width: 27rem;
+    max-width: 100%;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1.5rem 0 2rem 0;
-}
-
-.deskripsi-pproduk{
+    margin: 3rem 1rem;
     text-align: justify;
 }
 
-.carddoor-produk{
-    text-align: center;
-}
-
 .carddoor-produk a{
-    font-size: x-large;
+    display: flex;
+    margin: 0 auto;
     color: white;
     padding: 0.5em 0.9em;
     background-color: rgb(37, 37, 134);
 }
 
 
+
 /* .kusen-produk/////////////////////////////////////////////////////////// */
 .produk-container-kusen{
-    margin: 4rem 10rem 2rem 10rem;
+    width: 70vw;
+    margin: 3rem auto;
     display: flex;
     justify-content: space-between;
+    gap: 3rem;
 }
 
 .produkkusen-img{
-    width: 30rem;
-    display: flex;
-    justify-content: center;
+    max-width: 100%;
+    max-height: auto;
+    display: block; 
+    margin: auto; 
 }
 
 .produkkusen-img img{
@@ -75,25 +83,24 @@
   }
 
 .kusen-produk h1{
-    width: 55%;
-    text-align: left;
+    width: 80%;
     border-bottom: 2px solid;
+    white-space: nowrap;
 }
 
-/* .formargin{
-    width: 60%;
-} */
 
 .kusen-produk{
   display: flex;
   align-items: right;
+  margin: 0rem 1rem;
+  height: fit-content;
 } 
 
 .deskripsi-kproduk{
-    width: 33rem;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 1.5rem 0 2rem 0;
+    margin: 1.5rem 1rem;
+    text-align: justify;
 }
 
 .deskripsi-kproduk{
@@ -102,10 +109,12 @@
 
 .cardkusen-produk{
     text-align: center;
+    height: fit-content;
+    overflow: hidden;
 }
 
 .cardkusen-produk a{
-    font-size: x-large;
+    margin: 0 auto;
     color: white;
     padding: 0.5em 0.9em;
     background-color: rgb(37, 37, 134);
@@ -115,8 +124,9 @@
 /* <!-- marketplace/////////////////////////////////////////////////////////////////// --> */
 
 .mplace-container{
-    margin: 4rem 15rem 2rem 10rem;
     display: flex;
+    width: 80%;
+    margin: auto;
     flex-direction: column;
     justify-content: left;
     
@@ -132,22 +142,16 @@
 }
 
 .baris-marketplace{
-    width: 100rem;
     display: flex;
-    /* justify-content: center; */
-    /* margin: 0px; */
 }
 
 .kolom-mplace{
-    max-width: 25%;
+    width: 25vw;
     display: flex;
     flex-direction: row;
     padding: 1rem;
 }
 
-.kolom-mplace h5{
-    max-width: 30%;   
-}
 
 .deskripsi-mplace{
     display: flex;
@@ -155,11 +159,24 @@
     justify-content: left;
 }
 
-.deskripsi-mplace p{
+.deskripsi-mplace{
     display: flex;
-    font-size: smaller;
-    max-width: 50%;
+    width: 40%;
     text-align: left;
+}
+
+.deskripsi-mplace p{
+    font-size: 8pt;
+    text-align: left;
+}
+
+.icon-mplace{
+    width: 40%;
+    padding: 1rem;
+}
+
+.icon-a img{
+    max-width: 100%;
 }
 
 /* <!-- socialmedia/////////////////////////////////////////////////////////////////////////////// --> */
@@ -178,4 +195,104 @@
 
 .pemark{
     padding-top: 15px;
+}
+
+
+@media screen and (max-width: 900px){
+    div.produk-container, div.produk-container-kusen{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        margin: 0rem;
+
+    }
+
+    .produkdoor-img{
+        display: flex;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+    div.carddoor-produk{
+        display: flex;
+        width: 90%;
+        margin: 0rem auto;
+    }
+    
+
+    .kusen-produk h1, .door-produk h1, .judul-marketplace h1{
+        font-size: x-large;
+    }
+
+    div.produk-container-kusen{
+        width: 100vw;
+        margin-top: 2rem;
+    }
+    
+    .cardkusen-produk{
+        max-width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .deskripsi-kproduk, .kusen-produk{
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+    .baris-marketplace{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+     
+    .kolom-mplace{
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .deskripsi-mplace{
+        width: 100%;
+    }
+
+    .nama-mplace{
+        font-size: 7pt;
+    }
+
+    .deskripsi-mplace p{
+        font-size: 5pt;
+    }
+
+
+
+
+    .fter-container{
+		width: 100%;
+	  }
+	  
+	  .phone-container, .email-container, .address-container{
+		display: flex;
+		flex-direction: column;
+	  }
+	  
+	  .tlp-con h2{
+		font-size: smaller;
+		padding-left: 1rem;
+	  }
+	  
+	  div.konimg {
+		margin-right: 0rem;
+		padding-top: 1.5rem;
+	  }
+	  
+	  .button-footer{
+		margin-top: 1.3rem;
+	  }
+	  
+	  div.email-img, div.address-img{
+		margin-top: 1rem;
+		align-self: flex-start;
+	  }
 }

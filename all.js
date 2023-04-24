@@ -6,28 +6,50 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("show");
 });
 
+// Declare a global variable to store the original content
+var originalContent;
+
+function translatePage() {
+  // Get the source language of the page
+  var sourceLang = 'id';
+  
+  // Get the target language to translate to (in this case, Mandarin)
+  var targetLang = 'zh-CN';
+  
+  // Get the content to translate
+  originalContent = document.documentElement.innerHTML;
+  var content = originalContent;
+  
+  // Call the Google Cloud Translation API
+  var url = 'https://translation.googleapis.com/language/translate/v2?key=YOUR_API_KEY';
+  var data = {
+    q: "",
+		source: "auto",
+		target: "en",
+		format: "text",
+		api_key: ""
+  };
+  
+  fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(data)
+  })
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    // Update the content in the container element with the translated text
+    var translation = data.data.translations[0].translatedText;
+    document.getElementById('translation').innerHTML = translation;
+  });
+}
+
+function resetPage() {
+  // Restore the original content
+  document.getElementById('translation').innerHTML = originalContent;
+}
 
 
 
-{/* <script type="text/javascript"> */}
-  function sendEmail() {
-    const firstname = document.getElementById("firstname").value;
-    const lastname = document.getElementById("lastname").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const pesan = document.getElementById("pesan").value;
-
-    const xhr = new XMLHttpRequest();
-    xhr.open("POST", "send_email.php", true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        alert("Email sent!");
-      }
-    };
-
-    xhr.send(`firstname=${firstname}&lastname=${lastname}&email=${email}&phone=${phone}&pesa=${pesan}`);
-  }
-// </script>
+  
 

@@ -1,3 +1,8 @@
+*{
+    overflow-x: hidden;
+}
+
+
 .Keunggulan-doordetail{
     display: flex;
     flex-direction: row;
@@ -61,6 +66,10 @@
     margin-bottom: 7px;
 }
 
+.text-nc-pintu h1{
+    border-bottom: 4px solid;
+}
+
 .sc-pintu-con{
     display: flex;
 }
@@ -105,4 +114,106 @@
 
 .pemark{
     padding-top: 15px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .Keunggulan-doordetail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-door-detail{
+        display: flex;
+        width: 80vw;
+    }
+
+    .img-door-detail img{
+        max-width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .deskripsi-door-detail{
+        width: 70vw;
+        padding: 0;
+    }
+
+    .text-sc-pintu, .text-nc-pintu{
+        font-size: smaller;
+        margin: 1rem;
+        max-width: 80%;
+    }
+
+    .text-sc-pintu h1, .text-nc-pintu h1{
+        white-space: nowrap;
+        width: 100vw;
+    }
+
+    .sc-pintu-con{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sc-pitu-isi{
+        gap: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sc-pitu-gambar img{
+        width: 40vw;
+    }
+
+    .sc-pitu-gambar img{
+        max-width: 100%;
+    }
+
+    .sc-pitu-tentang{
+        font-size: smaller;
+    }
+
+    .sc-pitu-tentang p{
+        font-size: smaller;
+        white-space: nowrap;
+    }
+
+    .img-pilihan-warna{
+        width: 80vw;
+    }
+
+
+
+
+
+    .fter-container{
+		width: 100%;
+	  }
+	  
+	  .phone-container, .email-container, .address-container{
+		display: flex;
+		flex-direction: column;
+	  }
+	  
+	  .tlp-con h2{
+		font-size: smaller;
+		padding-left: 1rem;
+	  }
+	  
+	  div.konimg {
+		margin-right: 0rem;
+		padding-top: 1.5rem;
+	  }
+	  
+	  .button-footer{
+		margin-top: 1.3rem;
+	  }
+	  
+	  div.email-img, div.address-img{
+		margin-top: 1rem;
+		align-self: flex-start;
+	  }
 }

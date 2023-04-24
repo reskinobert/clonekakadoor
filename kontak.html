@@ -7,155 +7,180 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="kontak.css">
 
-
+    <script src="kontak.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("1HsbPa6A6YeG4bL6n");
+        })();
+    </script>
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    
-        <link rel="stylesheet" href="all.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="kontak.css">
-    
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="navbar-logo">
-              <a href="beranda.html"><img src="./aset/logo.png" alt="Logo"></a>
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="beranda.html"><img src="./aset/logo.png" alt="Logo"></a>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="beranda.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="event.html">Event</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">
+                <a href="produk.html">Produk</a>
+                <span><p class="a"> # </p></span>
+            </a>
+            <div class="dropdown-content">
+              <a href="kakadoor.html">Kaka Door</a>
+              <a href="kakakusen.html">Kaka Kusen</a>
             </div>
-            <ul class="navbar-links">
-              <li><a href="beranda.html">Beranda</a></li>
-              <li><a href="tentang.html">Tentang</a></li>
-              <li><a href="event.html">Event</a></li>
-              <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">
-                    <a href="produk.html">Produk</a>
-                    <p class="a"> # </p>
-                </a>
-                <div class="dropdown-content">
-                  <a href="kakakusen.html">Kaka kusen</a>
-                  <a href="kakakusen.html">Kaka Kusen</a>
-                </div>
-              </li>
-              <li><a href="kontak.html">Kontak</a></li>
-              <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">
-                    Bahasa
-                    <p class="a"> # </p>
-                </a>
-                <div class="dropdown-content">
-                  <a href="#">Indonesia</a>
-                  <a href="#">Mandarin</a>
-                </div>
-              </li>
-            </ul>
-            <button class="navbar-toggle">
-              <span class="navbar-toggle-icon"></span>
-            </button>
-        </nav>
-    
+          </li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">
+                Bahasa
+                <span><p class="a"> # </p></span>
+            </a>
+            <div class="dropdown-content">
+              <a href="#">Indonesia</a>
+              <a href="#">Mandarin</a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggle">
+          <span class="navbar-toggle-icon"></span>
+        </button>
+    </nav>
+
+<!-- kotak--------------------------------------------------------------- -->
 
     <div class="kontak-container">
-        <h1>Hubungi Kami</h1>
-        <div class="input-kontak-all">
-            <h2> Contact Us</h2>
-            
-                <div class="kontak">
-                    <form action="contact.php" method="post">
-                        <label for="">Nama Depan:</label>
-                        <br>
-                        <input class="kontak-input" type="text" value="" id="firstname" name="firstname" placeholder="First Name*" required="">
-                    </form>
-                    <form action="contact.php" method="post">
-                        <label for="">Nama Depan:</label>
-                        <br>
-                        <input class="kontak-input" type="text" value="" id="lastname" name="lastname" placeholder="First Name*" required="">
-                    </form>
-                </div> 
-                <div class="kontak">
-                    <form action="contact.php" method="post">
-                        <label for="">Email:</label>
-                        <br>
-                        <input class="kontak-input" type="text" value="" id="email" name="email" placeholder="Email*" required="">
-                    </form>
-                    <form action="contact.php" method="post">
-                        <label for="">No. Telephone:</label>
-                        <br>
-                        <input class="kontak-input" type="text" value="" id="phone" name="phone" placeholder="Phone Number*" required="">
-                    </form>
-                </div>   
-                <form class="pesan" action="contact.php" method="post">
-                    <label for="">Pesan:</label>
-                    <br>
-                    <textarea class="form-control" name="message" id="pesan" name="pesan" placeholder="Type your message here..." cols="30" rows="10" required=""></textarea>
-                    <button type="submit">Send</button>
-                </form>
-
-            <!-- <button type="submit">Send</button> -->
+        <div class="judul-kontak">
+            <h1>Hubungi Kami</h1>
+        </div>
+        <div class="kontak-card">
+            <h2>Contact Us</h2>
+            <div class="name-row">
+                <div class="form-group">
+                    <h5 class="label" for="name">Nama Depan</h5>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="firstname"
+                        placeholder="First name"
+                    />
+                </div>
+                <div class="form-group">
+                    <h5 class="label" for="name">Nama Belakang</h5>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="lastname"
+                        placeholder="Last name"
+                    />
+                </div>
+            </div>
+            <div class="kontak-row">
+                <div class="form-group">
+                    <h5 class="label" for="email">Email</h5>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="form-group">
+                    <h5 class="label" for="phone">Nomor Telepon</h5>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Phone Number"
+                    />
+                </div>
+            </div>
+            <div class="pesan-row">
+                <h5 class="label" for="pesan">Pesan</h5>
+                <textarea id="pesan" rows="10"  placeholder="Type your message here..."></textarea>
+            </div>
+            <button class="btn-kontak" onclick="sendEmail()">Submit</button>
         </div>
     </div>
-
-
-    <!-- footer////////////////////////////////////////////////////////// -->
-        <div class="footer">
-            <div class="fter-container">
-                <div class="footer-kontak">
-                    <div class="tlp-con">
-                        <h1>HUBUNGI KAMI</h1>
-                        <div class="knt-container">
-                            <div class="phone-container">
-                                <div class="contac-img">          
-                                  <div class="konimg">
-                                      <img src="./aset/phone-call.png" width="64">
-                                  </div>
-                                  <div class="p-wa">
-                                      <span class="ps-wa"><img src="./aset/whatsapp.png" width="24" height="24"> <p> +62 821 3948 4270 (Admin)</p></span>
-                                      <span class="ps-wa"><img src="./aset/whatsapp.png" width="24" height="24"> <p> +62 812 4957 779 (Marketing)</p></span>
-                                      <span class="ps-wa"><p>+62 31 3971927 (Kantor)</p></span>
-                                  </div>
-                                </div>
-                                <form action="tel:+62313971927" class="link-call">
-                                    <button type="submit" class="button-footer">
-                                        Telepon Kami
-                                    </button>
-                                </form>
+ 
+<!-- footer////////////////////////////////////////////////////////// -->
+     <div class="footer">
+        <div class="fter-container">
+            <div class="footer-kontak">
+                <div class="tlp-con">
+                    <h1>HUBUNGI KAMI</h1>
+                    <div class="knt-container">
+                        <div class="phone-container">
+                            <div class="contac-img">          
+                              <div class="konimg">
+                                  <img src="./aset/phone-call.png" width="64">
+                              </div>
+                              <div class="p-wa">
+                                <span class="ps-wa"><img src="./aset/whatsapp.png" width="24" height="24"> 
+                                    <p> 
+                                        <a href="https://web.whatsapp.com/send/?phone=6282139484270&amp;text&amp;type=phone_number&amp;app_absent=0" title="Share on WhatsApp" id="action-button" class="_9vcv _advm _9scb"> 
+                                            +62 821 3948 4270 (Admin)
+                                        </a>
+                                    </p>
+                                </span>
+                                <span class="ps-wa"><img src="./aset/whatsapp.png" width="24" height="24">
+                                     <p> 
+                                        <a href="https://web.whatsapp.com/send/?phone=628124957779&text&type=phone_number&app_absent=0" title="Share on WhatsApp" id="action-button" class="_9vcv _advm _9scb" data-lnfb-mode="origin">
+                                             +62 812 4957 779 (Marketing)
+                                        </a>
+                                     </p>
+                                </span>
+                                <span class="ps-wa"><p>+62 31 3971927 (Kantor)</p></span>
+                              </div>
                             </div>
-                            <div class="email-container">
-                                <div class="email-img">
-                                    <img src="./aset/email.png" width="64">
-                                    <p class="pemark">marketing@kakakusen.com</p>
-                                </div>
-                                <form action="mailto:marketing@kakakusen.com" class="link-email">
-                                    <button type="submit" class="button-footer">
-                                        Email Kami
-                                    </button>
-                                </form>
+                            <form action="tel:+62313971927" class="link-call">
+                                <button type="submit" class="button-footer">
+                                    Telepon Kami
+                                </button>
+                            </form>
+                        </div>
+                        <div class="email-container">
+                            <div class="email-img">
+                                <img src="./aset/email.png" width="64">
+                                <p class="pemark">marketing@kakadoor.com</p>
                             </div>
-                            <div class="address-container">
-                                <div class="address-img">
-                                    <img src="./aset/placeholder.png" width="64" height="64">
-                                    <p>Jl. Segoromadu I No.26, Kec. Kebomas, Kabupaten Gresik 61123, Indonesia</p>
-                                </div>
-                                <form action="https://goo.gl/maps/9fFBvXi1k7YbUrwL7" class="link-maps">
-                                    <button type="submit" class="button-footer">
-                                        Lokasi Kami
-                                    </button>
-                                </form>
+                            <form action="mailto:marketing@kakadoor.com" class="link-email">
+                                <button type="submit" class="button-footer">
+                                    Email Kami
+                                </button>
+                            </form>
+                        </div>
+                        <div class="address-container">
+                            <div class="address-img">
+                                <img src="./aset/placeholder.png" width="64" height="64">
+                                <p>Jl. Segoromadu I No.26, Kec. Kebomas, Kabupaten Gresik 61123, Indonesia</p>
                             </div>
+                            <form action="https://goo.gl/maps/9fFBvXi1k7YbUrwL7" class="link-maps">
+                                <button type="submit" class="button-footer">
+                                    Lokasi Kami
+                                </button>
+                            </form>
                         </div>
                     </div>
-                </div> 
-            </div>   
-    
-            <script src="./all.js"></script>
-    </body>
-    </html>
-    
+                </div>
+            </div> 
+        </div>
+        <div class="crtby">
+            <p>2023 by KakaDoor </p>
+        </div>
+    </div>   
+
+    <script src="all.js"></script>
+
 </body>
 </html>

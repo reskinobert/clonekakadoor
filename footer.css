@@ -18,10 +18,11 @@
 .button-footer{
     width: 160px;
     height: 40px;
-    font-size: larger;
+    /* font-size: larger; */
+    font-weight: bolder;
     margin-left: 2rem;
     background-color: white;
-    color: rgb(39, 74, 150);;
+    color: rgb(39, 74, 150);
 }
 
 .phone-container, .email-container{
@@ -36,6 +37,10 @@
     display: flex;
     align-items: center;
     /* margin-left: 1rem; */
+}
+
+.ps-wa p a{
+    color: white;
 }
 
 

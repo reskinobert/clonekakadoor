@@ -1,3 +1,6 @@
+/* body{
+  overflow-x: hidden;
+} */
 
 button a{
   color: white;
@@ -5,14 +8,16 @@ button a{
 
 /* video style----------------------------------------------------------- */
 .video-container{
-    display: grid; 
-    margin: 3rem 10rem 3rem 10rem;
+    display: flex; 
+    width: 100vw;
+    margin: 3rem 0;
+    
 }
 
 .video-container video{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
-  max-width: 100%;
-  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+  max-width: 70%;
+  margin: auto;
 }
 
 
@@ -184,10 +189,12 @@ div.b_container2 button {
 .container-mng{
   display: flex;
   justify-content: space-between;
+  gap: 7rem;
+  margin: 2rem 15rem;
 }
 
 .mng-description{
-  margin: 0rem 13rem 2rem 0rem;
+  width: 40vw;
 }
 
 .h3-mng{
@@ -195,26 +202,38 @@ div.b_container2 button {
   padding-bottom: 15px;
 }
 
-.img-mng img{
+.img-mng{
+  width: 40vw;
+  
+}
+
+/* .img-mng img{
   padding-top: 9px;
   margin: 1rem 13rem;
-}
+} */
 
 /* reason----------------------------------------------------------- */
 .container-rsn{
   margin: 3rem 13rem;
   display: flex;
   justify-content: space-between;
+  overflow-x: visible;
 }
 
 .reason-description ul li {
   list-style-position: outside;
   list-style-type: disc;
   padding-left: 5px;
+  overflow-x: visible;
 }
 
 .reason-description ul{
   margin: 1rem 5rem 0rem 2rem;
+}
+
+.img-rsn{
+  width: 40vw;
+  
 }
 
 /* setifikat---------------------------------------------------------- */
@@ -308,14 +327,114 @@ div.b_container2 button {
 
 /* end style about beranda----------------------------------------------------------- */
 
-/* Adjust the container padding for smaller screens */
-@media only screen and (max-width: 700px) {
+/* footer///////////////////////////////////////////////////////////////////////////// */
+.footer{
+  margin-top: 2rem;
+  background-color: rgb(39, 74, 150);
+  color: white;
+}
 
-  .video-container{
-    width: auto;
-    margin: 3rem;
-  }
-   
+.fter-container{
+  display: grid;
+  justify-content: center;
+}
+
+.tlp-con h1{
+  padding-right: 4rem;
+  position: static;
+  padding-bottom: 3px;
+  color: white;
+  border-bottom: 3px dashed white;
+}
+
+.button-footer{
+  width: 160px;
+  height: 40px;
+  font-size: larger;
+  background-color: white;
+  color: rgb(39, 74, 150);;
+}
+
+.phone-container{
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.konimg{
+  margin-right: 1rem;
+  padding-top: 1.5rem;
+}
+
+.email-container{
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ps-wa{
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+
+.ps-wa p a{
+ padding-left: 5px; 
+ margin-right: 2rem;
+ color: white;
+}
+
+.email-container, .address-container{
+  justify-content: space-between;
+}
+
+.email-img, .address-img, .contac-img{
+  display: flex;
+}
+
+.email-img p, .address-img p{
+  margin-left: 2rem;
+}
+
+.email-img p{
+  padding-top: 10px;
+}
+
+.address-container{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.address-img p{
+  width: 250px  
+}
+
+.address-img img{
+  margin-top: 7px;
+}
+
+.crtby{
+  margin-left: 15%;
+  width: 70%;
+  border-top: 1px solid white;
+  padding-bottom: 1.5rem;
+}
+
+.footer{
+  padding-top: 1rem;
+}
+
+
+/* Adjust the container padding for smaller screens */
+@media only screen and (max-width: 900px) {
+
   .container_card{
     display: block;
     margin: 3rem 3rem 4rem 3rem;
@@ -368,40 +487,66 @@ div.b_container2 button {
 
   .btn-kusen{
     display: flex;
-    /* margin: 0 0 0 4.5rem; */
-    justify-content: center;
-    align-self: center;
-    text-align: center;
+    margin: auto;
   }
 
   .container-mng, .container-rsn{
-    display: block;
-    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 1rem;
+  }
+  
+  .img-mng{
+    display: flex;
+    width: 80vw;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
   }
 
   .img-mng img{
-    max-width: 16rem;
-    height: auto;
-    margin: 0rem 0rem 0rem 4rem;
+    max-width: 100%;
   }
 
-  .mng-description{
-    margin: 3rem 3rem 0 3rem;
+  .mng-description, .h3-mng {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+  }
+
+  .mng-description p, .h3-mng{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
   }
 
   .container-rsn {
-    margin: 3rem;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .reason-description{
+    margin: 1rem;
   }
 
   .reason-description ul {
     margin: 0rem 0rem 1rem 2rem;
   }
-  .img-rsn img{
-    max-width: 16rem;
-    height: auto;
-    margin: 0rem 0rem 0rem 1rem;
-  }
 
+  .img-rsn{
+    display: flex;
+    width: 85%;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .img-rsn img{
+    max-width: 100%;
+  }
   .container-sertifikasi {
     display: flex;
     flex-direction: column;
@@ -473,105 +618,5 @@ div.email-img, div.address-img{
 
 }
 
-/* footer///////////////////////////////////////////////////////////////////////////// */
-.footer{
-  margin-top: 2rem;
-  background-color: rgb(39, 74, 150);
-  color: white;
-}
-
-.fter-container{
-  display: grid;
-  justify-content: center;
-}
-
-.tlp-con h1{
-  padding-right: 4rem;
-  position: static;
-  padding-bottom: 3px;
-  color: white;
-  border-bottom: 3px dashed white;
-}
-
-.button-footer{
-  width: 160px;
-  height: 40px;
-  font-size: larger;
-  background-color: white;
-  color: rgb(39, 74, 150);;
-}
-
-.phone-container{
-  display: flex;
-  white-space: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.konimg{
-  margin-right: 1rem;
-  padding-top: 1.5rem;
-}
-
-.email-container{
-  display: flex;
-  white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.ps-wa{
-  padding-top: 7px;
-  display: flex;
-  align-items: center;
-  margin-left: 1rem;
-}
 
 
-.ps-wa p{
- padding-left: 5px; 
- margin-right: 2rem;
-}
-
-.email-container, .address-container{
-  justify-content: space-between;
-}
-
-.email-img, .address-img, .contac-img{
-  display: flex;
-}
-
-.email-img p, .address-img p{
-  margin-left: 2rem;
-}
-
-.email-img p{
-  padding-top: 10px;
-}
-
-.address-container{
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.address-img p{
-  width: 250px  
-}
-
-.address-img img{
-  margin-top: 7px;
-}
-
-.crtby{
-  margin-left: 15%;
-  width: 70%;
-  border-top: 1px solid white;
-  padding-bottom: 1.5rem;
-}
-
-.footer{
-  padding-top: 1rem;
-}
