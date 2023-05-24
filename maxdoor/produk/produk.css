@@ -1,0 +1,24 @@
+/* custom header */
+.detail a p strong {
+    line-height: 1.5rem !important;
+}
+
+
+.body-product-container{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.container-list-produk{
+    max-width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}
+
+.container-judul-produk{
+    max-width: 90%;
+    margin: auto;
+}

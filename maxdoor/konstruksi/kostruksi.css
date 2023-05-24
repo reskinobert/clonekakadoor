@@ -1,0 +1,22 @@
+/* custom header */
+body {
+    padding-top: 0;
+}
+
+.detail a p strong {
+    line-height: 1.5rem !important;
+}
+
+
+.konstruksi-container{
+    width: 80%;
+    margin: auto;
+}
+
+.container-judul-produk{
+    margin-bottom: 2rem;
+}
+
+.btn.btn-warning.btn-productdetail{
+    background-color: #ddab61;
+}

@@ -1,0 +1,8 @@
+.detail a p strong {
+    line-height: 1.5rem !important;
+}
+
+.project-lists-container{
+    width: 80%;
+    margin: auto;
+}
