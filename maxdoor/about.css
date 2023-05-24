@@ -40,3 +40,19 @@
 .about-main1 h3, .about-main2 h3{
  padding-bottom: 1rem;
 }
+
+@media (max-width: 800px) {
+    .about-main-detail{
+        flex-direction: column;
+    }
+
+    .about-main2, .about-main1{
+        max-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .about-main2{
+        border-left: solid white 1px;
+        margin-top: 1rem;
+    }
+  }
