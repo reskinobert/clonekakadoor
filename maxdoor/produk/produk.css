@@ -10,15 +10,47 @@
 }
 
 .container-list-produk{
-    max-width: 90%;
+  width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 1.5rem;
+  grid-gap: 0.5em;
+  overflow: hidden;
 }
 
 .container-judul-produk{
     max-width: 90%;
     margin: auto;
+}
+
+@media (max-width: 1300px) {
+    .container-list-produk{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 950px) {
+.container-list-produk{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 950px) {
+.container-list-produk{
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 650px) {
+.container-list-produk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 0rem;
+    margin-right: 1.2rem;
+}
+.container-judul-produk{
+    max-width: 80%;
+}
 }
