@@ -1,0 +1,97 @@
+:root {
+    --black: #212529;
+    --darkergold: #866701;
+    --lightergold: #a38a4d;
+    --lightgold: #c6b378;
+    --light: #f1eac0;
+    --lighter: #fff6de;
+    --white: #f7f5f3;     
+}
+
+
+/* style header link------------------------------------------------------------------ */
+.container-products{
+    width: 80%;
+    margin: auto;
+}
+
+.container-judul-products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.directory-products p{
+    margin: 0;
+}
+
+.judul-products{
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+
+/* end style header link------------------------------------------------------------------ */
+
+/*style card image------------------------------------------------------------------ */
+.product-card-container{
+    /* max-width: 80%; */
+    display: flex;
+    margin: 3rem auto;
+    gap: 1rem;
+}
+
+.card-image{
+    display: flex;
+    width: 95%;
+}
+
+#product-card{
+    max-width:25%;
+    padding: 1em;
+    border: solid 0.5px #86670177;
+    background-color: #00000010;
+    transition: 900ms linear; 
+}
+
+.card-image img{
+    border-radius: 5%;
+    max-width: 100%;
+}
+
+.card-image img:hover{
+    transform: scale(1.08);
+    box-shadow: 5px 5px .4em #8667015b;
+}
+
+.card-title{
+    color: var(--black);
+    margin-top: 2rem;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    border-top: dashed 0.5px #86670177;
+    padding-top: 5px;
+}
+
+/* end style card image------------------------------------------------------------------ */
+
+/* responsive */
+@media (max-width: 720px) {
+    .product-card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    #product-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card-container{
+        display: flex;
+        flex-direction: column;
+    }
+}

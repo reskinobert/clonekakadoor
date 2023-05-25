@@ -1,0 +1,385 @@
+:root {
+    --black: #212529;
+    --darkergold: #866701;
+    --lightergold: #a38a4d;
+    --lightgold: #c6b378;
+    --light: #f1eac0;
+    --lighter: #fff6de;
+    --white: #f7f5f3;     
+}
+
+body{
+    background-color: var(--white);
+    background-image: url(./images/pexels-max-rahubovskiy-6758787.jpg);
+    /* background-position: center; */
+    /* background-size: cover; */
+    overflow-x: hidden;
+}
+
+/* *{
+  overflow-x: hidden;
+} */
+
+a, p, h1, h2, h3, h4{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* style Header--------------------------------------------------------------------------------------------------------------------------------------- */
+.container-contact-header{
+    padding-bottom: 1rem;
+}
+
+.header-office, .container-contact-header{
+    display: flex;
+    margin: auto;
+}
+
+.header-office{
+    gap: 7em;
+    font-size: smaller;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: row-reverse;
+}
+
+.header-contact, .header-alamat{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-contact-header{
+    display: flex;
+    margin: auto 1rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    color: var(--darkergold);
+    background-color: var(--light);
+}
+
+
+.header-logo{
+    /* background-color: white; */
+    display: flex;
+    margin: 0 auto;
+    padding: 1rem;
+    align-items: center;
+    box-shadow:  -0.5rem 0 2rem rgba(167, 167, 167, 0);
+}
+
+p strong{
+    line-height: 0;
+}
+
+
+
+strong.gap{
+    color: white;
+    display: flex;
+    margin: auto;
+    padding-right: 2rem;
+}
+
+.detail a p{
+    margin: auto;
+}
+
+ @media (max-width: 1100px) {
+    .container-contact-header{
+        flex-direction: column;
+    }
+
+    .header-logo{
+        gap: 1rem;
+        margin-bottom: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .header-logo{
+        /* width: 40%; */
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem;
+    }
+
+    .header-alamat{
+        padding-right: 1rem;
+    }
+
+    .header-office{
+        margin-top: 0;
+        margin-bottom: 0rem;
+        gap: 0.5rem;
+    }
+    
+  }
+
+  
+@media (max-width: 768px) {
+    .header-office, .container-contact-header{
+        flex-direction: column;
+    }
+
+    .header-office, .header-logo{
+        gap: 1rem;
+        margin-bottom: 1rem;
+        align-items: flex-start;
+    }
+
+  }
+
+  .head-header{
+    margin-bottom: 3rem;
+  }
+
+  /* end style Header--------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+  /* end style NAV--------------------------------------------------------------------------------------------------------------------------------------- */
+  
+  /* .navbar.navbar-expand-lg.navbar-dark.bg-dark, .navbar-brand, .btn.btn-dark.dropdown-toggle{
+    background-color: var(--black) !important;
+    margin: 0.3rem;
+    border: none;
+  }
+
+  .navbar.navbar-expand-lg.navbar-dark.bg-dark, .navbar-brand, .btn.btn-dark.dropdown-toggle:hover{
+    border: var(--white);
+  } */
+
+  .navbar.navbar-expand-lg.navbar-dark.bg-dark .container-fluid{
+    width: 45%;
+    display: flex;
+    margin: auto;
+  }
+
+  .navbar-collapse.collapse{
+    width: 100%;
+    justify-content: right;
+    margin: auto;
+  }
+
+  @media (max-width: 1100px) {
+    .navbar.navbar-expand-lg.navbar-dark.bg-dark .container-fluid{
+        width: 80%;
+    }
+  }
+  
+  /* end style NAV--------------------------------------------------------------------------------------------------------------------------------------- */
+
+  
+  /* main style------------------------------------------------------------------------------------------------ */
+  
+  .container-main{
+    margin-bottom: 4rem;
+  }
+  
+  .container-about-main{
+    margin: 5rem 0 2rem 0;
+    display: flex;
+    max-width: 80%;
+    margin: 4rem auto;
+  }
+
+  .judul-main{
+    display: flex;
+    margin: auto;
+    width: 40%;
+    align-items: center;
+  }
+
+  .judul-main h1{
+    font-size: 6rem;
+    margin-right: 1rem;
+  }
+
+  .deskripsi-main{
+    display: flex;
+    max-width: 50%;
+    margin: auto;
+    padding: 1rem 0 1rem 5rem;
+    border-left: solid #866701 0.5px;
+  }
+
+  .deskripsi-main:hover {
+    background-color: rgba(255, 255, 255, 0.089) ;
+    font-size: larger;
+    padding: 1.5rem;
+    border-radius: 2%;
+    transition: 300ms linear; 
+  }
+  
+  .judul-main h1:hover {
+    text-shadow: -5px 3px rgba(85, 83, 83, 0.233);
+    font-size: 6.5rem;
+    padding: 1.5rem;
+    transition: 300ms linear;
+    padding-left: 2rem; 
+  }
+
+  /* BUTTON PRODUCT */
+  .produk-button{
+    max-width: 80%;
+    display: flex;
+    margin: 3rem auto;
+    gap: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .produk-item1{
+    width: 10rem;
+    height: 10rem;
+    background-image: url(./images/hmr.jpg);
+    background-position: center;
+    border-radius: 50%;
+    box-shadow:  0 4px .5em rgba(0, 0, 0, 0.116);
+  }
+
+  .produk-item2{
+    width: 10rem;
+    height: 10rem;
+    background-image: url(./images/playwood.jpeg);
+    background-position: center;
+    border-radius: 50%;
+    box-shadow:  0 4px .5em rgba(0, 0, 0, 0.116);
+  }
+
+  .produk-item3{
+    width: 10rem;
+    height: 10rem;
+    background-image: url(./images/blockboard.png);
+    background-position: center;
+    border-radius: 50%;
+    box-shadow:  0 4px .5em rgba(0, 0, 0, 0.116);
+  }
+
+  .produk-item1 a, .produk-item2 a, .produk-item3 a{
+    color: var(--white);
+    font-weight: bolder;
+    width: 5rem;
+    text-shadow: 1px 1px #20202031;
+    border-bottom: solid 1px;
+    padding-bottom: 0.5rem;
+    border-radius: 20rem;
+    letter-spacing: 2px;
+    background-color: rgba(78, 74, 74, 0.13);
+  }
+
+
+  .produk-item1 a:hover, .produk-item2 a:hover, .produk-item3 a:hover{
+    padding: 0.5rem;
+    border-radius: 20rem;
+    color: var(--darkergold);
+    background-color: rgba(255, 255, 255, 0.247);
+    text-align: center;
+    transition: 300ms linear; 
+  }
+
+  .featurette-divider1{
+    box-shadow:  0 4px .5em #866701;
+    color: var(--light);
+  }
+
+  .featurette-divider2{
+    box-shadow:  0 -4px .5em #866701;
+    color: var(--light);
+  }
+
+  /* responsive */
+  @media (max-width: 1080px) {
+    .container-about-main{
+      width: 90%;
+    }
+    .judul-main h1{
+      max-width: 100%;
+      font-size: 4.3rem;
+    }
+
+    .deskripsi-main{
+      padding-left: 3rem;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .container-about-main{
+      flex-direction: column;
+      align-items: start;
+      justify-content: left;
+      text-align: left;
+    }
+
+    .judul-main{
+      max-width: 100%;
+      width: 100%;
+      margin: auto 1rem;
+      letter-spacing: 1.3rem;
+    }
+
+    .deskripsi-main{
+      margin: auto 2.5rem;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 680px){
+    .button-link{
+      width: 50%;
+      height: 15rem;
+      margin: auto;
+    }
+
+    .produk-button{
+      flex-direction: column;
+    }
+  }
+
+
+  /* end main style--------------------------------------------------------------------------------------------- */
+
+
+  /* contact info style------------------------------------------------------------------------------------ -----*/
+  .contact-info{
+    max-width: 80%;
+    margin: 1rem auto;
+  }
+
+  .contact{
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact svg{
+    color: #866701;
+  }
+
+  .contact svg{
+    margin-bottom: 1rem;
+  }
+
+  .text-uppercase{
+    margin-bottom: 0;
+  }
+
+  /* end contact info-------------------------------------------------------------------------------------------- */
+
+
+  /* footer-------------------------------------------------------------------------------------------------------*/
+  footer{
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 1rem;
+    background-color: rgba(245, 222, 179, 0.226);
+  }
+
+  footer p{
+    text-align: center;
+    font-size: smaller;
+  }
+  /* end footer-------------------------------------------------------------------------------------------------------*/
+  
