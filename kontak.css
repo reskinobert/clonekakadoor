@@ -1,122 +1,102 @@
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact4 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+
+.contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
+  color: #3e4555;
+}
+
+.contact4 .font-weight-medium {
+	font-weight: 500;
+}
+
+.contact4 .form-control {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact4 .form-control:focus {
+  border-color: #ffffff;
+}
+
+.contact4 input::-webkit-input-placeholder,
+.contact4 textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 input:-ms-input-placeholder,
+.contact4 textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 input::placeholder,
+.contact4 textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 .right-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.contact4.bg-info {
+    background-color: #000000 !important;
+}
+
+.contact4 .text-inverse {
+    color: #3e4555 !important;
+}
+
+.bg-info.contact4.overflow-hiddedn.position-relative{
+  width: 85%;
+  margin: auto;
+}
+
+footer{
+  margin-top: 2rem;
+}
+
+.col-lg-6.right-image.p-r-0 iframe{
+ max-height: 100%;
+}
+
+.row.no-gutters{
+  padding: 3rem 1rem;
+}
+
+/* css tambahan--------------------------------------------------------- */
 .kontak-container{
-    margin: 3rem 0rem;
+  font-size: larger;
 }
 
-.label{
-    padding: 5px;
+.col-lg-12.kontak-item{
+  padding: 0.5rem;
 }
 
-.judul-kontak{
-    width: 40%;
-    display: flexbox;
-    margin: 0.5rem auto;
-    text-align: center;
+/* --------------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+	.contact4 .contact-box {
+    padding: 30px 105px 80px 0px;
+	}
 }
 
-.kontak-card{
-    width: 40%;
-    padding: 1rem;
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
+@media (max-width: 767px) {
+	.contact4 .contact-box {
+    padding-left: 15px;
+    padding-right: 15px;
+	}
 }
 
-.kontak-card h2{
-    display: flex;
-    justify-self: left;
-    text-align: left;
+@media (max-width: 1023px) {
+	.contact4 .right-image {
+			position: relative;
+			bottom: -95px;
+	}
 }
-
-div.name-row, div.kontak-row{
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.form-group{
-    width: 50%;
-}
-
-
-input, textarea{
-    width: 100%;
-    border: solid black;
-    padding: 10px;
-    height: max-content;
-}
-
-.btn-kontak{
-    width: 20vh;
-    justify-self: center;
-}
-
-/* tambahanfooter */
-.phone-container, .email-container{
-    margin-top: 1rem;
-}
-
-.knt-container{
-    margin-bottom: 1rem;
-}
-.p-wa{
-   padding-left: 2rem;
-}
-
-.pemark{
-    padding-top: 15px;
-}
-
-
-@media screen and (max-width: 900px){
-    div.name-row, div.kontak-row{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group, input{
-        width: 100%;
-    }
-
-    .pesan-row textarea{
-        height: max-content;
-    }
-
-    .kontak-card{
-        width: 80%;
-    }
-
-
-
-    .fter-container{
-		width: 100%;
-	  }
-	  
-	  .phone-container, .email-container, .address-container{
-		display: flex;
-		flex-direction: column;
-	  }
-	  
-	  .tlp-con h2{
-		font-size: smaller;
-		padding-left: 1rem;
-	  }
-	  
-	  div.konimg {
-		margin-right: 0rem;
-		padding-top: 1.5rem;
-	  }
-	  
-	  .button-footer{
-		margin-top: 1.3rem;
-	  }
-	  
-	  div.email-img, div.address-img{
-		margin-top: 1rem;
-		align-self: flex-start;
-	  }
-}
-
-
