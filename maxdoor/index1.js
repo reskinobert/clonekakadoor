@@ -1,7 +1,7 @@
 const listhotels = [
     {
     title: "Hotel 1",
-    img: "images/download.jpg"
+    img: "images/project/hotel/drweb/ho.jpg"
   }, {
     title: "Hotel 2",
     img: "images/download.jpg"

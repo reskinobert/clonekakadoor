@@ -9,6 +9,7 @@ body {
 .project-lists-container{
     width: 80%;
     margin: auto;
+    margin-bottom: 3rem;
 }
 
 
@@ -28,6 +29,14 @@ body {
 
 .list-filter{
     margin-bottom: 2rem;
+}
+
+/* .header-main-lists h2{
+    padding-left: 0.em;
+} */
+
+.col-md-7.text-product1{
+    padding-left: 0 !important;
 }
 
 
