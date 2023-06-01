@@ -10,10 +10,11 @@
 }
 
 .container-list-produk{
-  width: 90%;
+  max-width: 90%;
+  /* width: 90%; */
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 0.5em;
   overflow: hidden;
@@ -23,6 +24,10 @@
     max-width: 90%;
     margin: auto;
 }
+
+/* .row{
+    margin: 0 !important;
+} */
 
 @media (max-width: 1300px) {
     .container-list-produk{
