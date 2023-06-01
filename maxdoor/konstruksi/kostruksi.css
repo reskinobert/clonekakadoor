@@ -3,6 +3,14 @@ body {
     padding-top: 0;
 }
 
+hr{ 
+    color: white;
+}
+
+footer{
+    margin-top: 4rem;
+}
+
 .detail a p strong {
     line-height: 1.5rem !important;
 }
@@ -14,9 +22,80 @@ body {
 }
 
 .container-judul-produk{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    /* background-color: #ddab6170; */
 }
 
 .btn.btn-warning.btn-productdetail{
     background-color: #ddab61;
+}
+
+.row.featurette{
+    flex-direction: row-reverse;
+}
+
+.col-md-7.text-product1{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.col-md-5 img{
+    margin: 1.5rem auto ;
+    max-width: 90%;
+    border-radius: 0% 50% 50% 0%;
+    box-shadow: 1px 2px white;
+}
+
+/* core style------------------------ */
+
+.core-container{
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.judul-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.honeycomb-container, .solid-container{
+    width: 50%;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.img-core img{
+    border-radius: 1rem;
+    width: 10rem;
+    height: auto;
+    box-shadow: 1px 3px .4em white;
+}
+
+
+@media (max-width: 900px){
+    .core-container{
+        flex-direction: column;
+    }
+
+    .honeycomb-container, .solid-container{
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .img-core img{
+        width: 15rem;
+    }
+}
+
+@media (max-width: 600px){
+    .honeycomb-container, .solid-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
