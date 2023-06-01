@@ -14,9 +14,9 @@ h1{
     margin: 1rem 0;
 }
 
-.row{
+/* .row{
     margin: 1rem 0;
-}
+} */
 
 .float{
 	position:fixed;
@@ -99,6 +99,9 @@ strong.gap{
     text-align: justify;
 }
 
+.drop-produk{
+    color: rgba(255, 255, 255, 0.5);
+}
 
 
 @media (max-width: 768px) {
@@ -188,6 +191,7 @@ hr{
 .btn.btn-secondary.dropdown-toggle.dropdown-toggle-split{
     background-color: transparent;
     border: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .drop-produk:hover{
