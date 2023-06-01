@@ -1,3 +1,8 @@
 .container-contact-header{
     max-width: 85%;
 }
+
+.kontak-container, .contact-maps{
+    width: 80%;
+    margin: 2rem auto;
+}

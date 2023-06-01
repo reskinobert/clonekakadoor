@@ -10,15 +10,30 @@
 
 body{
     background-color: var(--white);
-    background-image: url(./images/pexels-max-rahubovskiy-6758787.jpg);
     /* background-position: center; */
     /* background-size: cover; */
     overflow-x: hidden;
+    z-index: 3;
+    position: relative;
+    margin-top: 1rem;
 }
 
-/* *{
-  overflow-x: hidden;
-} */
+body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -1rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url(./images/pexels-max-rahubovskiy-6758787.jpg);
+  background-repeat: no-repeat;
+  /* background-position: 50% 0; */
+  z-index: -10;
+  /* background-size: cover; */
+}
+
 
 a, p, h1, h2, h3, h4{
     text-decoration: none;
@@ -295,11 +310,11 @@ strong.gap{
     }
     .judul-main h1{
       max-width: 100%;
-      font-size: 4.3rem;
+      font-size: 4rem;
     }
 
     .deskripsi-main{
-      padding-left: 3rem;
+      padding-left: 2.2rem;
     }
   }
 
@@ -315,11 +330,11 @@ strong.gap{
       max-width: 100%;
       width: 100%;
       margin: auto 1rem;
-      letter-spacing: 1.3rem;
+      letter-spacing: 1rem;
     }
 
     .deskripsi-main{
-      margin: auto 2.5rem;
+      margin: auto 1rem auto 2.2rem;
       max-width: 100%;
     }
   }
@@ -336,6 +351,13 @@ strong.gap{
     }
   }
 
+  @media (max-width: 600px){
+    .produk-item3, .produk-item2, .produk-item1{
+      width: 8rem;
+      height: 8rem;
+    }
+
+  }
 
   /* end main style--------------------------------------------------------------------------------------------- */
 
@@ -353,6 +375,9 @@ strong.gap{
 
   .contact svg{
     color: #866701;
+    border: solid 1px var(--darkergold);
+    padding: 5PX;
+    border-radius: 50%;
   }
 
   .contact svg{
@@ -368,13 +393,13 @@ strong.gap{
 
   /* footer-------------------------------------------------------------------------------------------------------*/
   footer{
-    margin-left: -2rem;
-    margin-bottom: -2rem;
-    display: flex;
-    width: 100vw;
+    position: relative;
+    bottom: 0;
+    width: 100%;
     justify-content: center;
-    padding-top: 1rem;
+    padding: 1rem 0 0.4rem 0;
     background-color: rgba(245, 222, 179, 0.226);
+    margin-top: 4rem;
   }
 
   footer p{
