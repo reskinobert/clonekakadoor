@@ -1,0 +1,16 @@
+.contac-us-container{
+    margin: 5rem;
+}
+
+.form-contact-us{
+    margin-bottom: 1rem;
+}
+
+.detail a p strong {
+    line-height: 1.5rem !important;
+}
+
+.project-lists-container{
+    width: 80%;
+    margin: auto;
+}

@@ -1,0 +1,46 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    margin: auto;
+    color: whitesmoke;
+    background-color: var(--bgmain-lighter);
+}
+
+:root {
+    --bgmain: #2d313a;
+    --bgmain-lighter:#57595f;
+    --abu: #81858f; 
+    --goldmain: #ddab61; 
+  }
+
+  a{
+    color: whitesmoke;
+  }
+
+.container-contac-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: var(--bgmain-lighter);
+}
+
+.header-office{
+    display: flex;
+}
+
+.header-logo{
+    width: 30%;
+    border-right: dashed whitesmoke;
+    margin: auto 0 auto 0;
+}
+
+.header-contact, .header-alamat{
+    display: flex;
+    margin: auto;
+    padding-left: 20rem;
+}
+
+.detail p{
+    line-height: 1em;
+}

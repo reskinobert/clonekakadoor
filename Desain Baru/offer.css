@@ -1,0 +1,14 @@
+
+h1, h2, h3, h4{
+    color: white;
+}
+
+.fasilitas-container, .header-container{
+    width: 80%;
+    margin: 3rem auto 1rem auto;
+}
+
+.fasilitas-container{
+    max-width: 60%;
+    text-align: center;
+}
