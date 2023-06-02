@@ -1,7 +1,8 @@
 a, p, h1, h2, h3{
     text-decoration: none;
-    color: white
+    color: rgb(0, 0, 0)
 }
+
 
 h1{
     margin: 1rem 0;
@@ -46,7 +47,7 @@ h1{
 
 /* style Header--------------------------------------------------------------------------------------------------------------------------------------- */
 .header-office, .container-contact-header{
-    background-color: #00000000;
+    background-color:radial-gradient(circle at 10% 20%, rgb(192, 187, 187) 0%, rgb(255, 255, 255) 90.2%);
     display: flex;
     margin: 0.5rem auto;
 }
@@ -96,6 +97,18 @@ strong.gap{
 
 .about-short{
     text-align: justify;
+}
+
+.header-body{
+    background-color: #420001;
+}
+
+.mx-auto.d-sm-flex.d-block.flex-sm-nowrap a{
+    color: white;
+}
+
+.dropdown-menu.show{
+    background-color: #615152a8;
 }
 
 /* @media (max-width: 600px) {
@@ -185,7 +198,7 @@ strong.gap{
   }
 
   h4.fw-normal{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: larger;
     font-weight: bolder;
     letter-spacing: 1px;
@@ -239,7 +252,7 @@ strong.gap{
   .contact.col-md-4.item-box{
     padding-left: 2rem;
     padding-right: 2rem;
-    border-left: solid white 1px;
+    border-left: solid rgb(0, 0, 0) 1pt;
     /* border-right: solid white 1px; */
     display: flex;
     flex-direction: column;
