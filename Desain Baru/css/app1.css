@@ -111,6 +111,10 @@ strong.gap{
     background-color: #615152a8;
 }
 
+.navbar-toggler{
+    background-color: rgba(0, 0, 0, 0.096);
+}
+
 /* @media (max-width: 600px) {
     .navbar-brand{
         margin-right: 0rem;
@@ -219,7 +223,7 @@ strong.gap{
   .container-more-about{
     /* white-space: nowrap; */
     width: 35%;
-    background-color: #e7e7e736;
+    background-color: #c9c9c936;
     padding: 3rem 1rem 2rem 4rem;
     border-radius: 1.5rem;
   }
