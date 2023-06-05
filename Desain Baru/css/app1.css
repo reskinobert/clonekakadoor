@@ -153,6 +153,10 @@ strong.gap{
     flex-wrap: nowrap !important;
 }
 
+.nav-item{
+    padding: 0 1rem;
+}
+
 @media (max-width: 768px) {
     .header-office, .container-contact-header{
         flex-direction: column;
