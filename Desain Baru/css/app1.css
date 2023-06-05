@@ -323,6 +323,21 @@ strong.gap{
     gap: 2rem;
   }
 
+.navbar-toggler.collapsed{
+    margin-top: 1rem;
+    /* float: left; */
+}
+
+#navbarCollapse{
+    width: 100%;
+    justify-content: left;
+    margin-top: 1rem;
+    align-items: flex-start;
+    text-align: start;
+    float: left;
+    margin-left: 2rem;
+  }
+
   @media (max-width: 480px) {
     .container-more-about{
         padding: 0;
@@ -336,6 +351,7 @@ strong.gap{
         border-left: none;
         margin-top: 1rem;
       }
+
   }
 
 @media (max-width: 768px) {
