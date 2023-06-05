@@ -13,7 +13,12 @@
 
 a, p, h1, h2, h3{
     text-decoration: none;
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1em;
+}
+
+a{
+    letter-spacing: 0.2em; 
 }
 
 p{
@@ -120,7 +125,7 @@ strong.gap{
     background-color: #420001;
 }
 
-.mx-auto.d-sm-flex.d-block.flex-sm-nowrap a{
+.mx-auto.d-block.flex-sm-nowrap a{
     color: white;
 }
 
@@ -143,6 +148,11 @@ strong.gap{
 
 } */
 
+.mx-auto.d-block.flex-sm-nowrap{
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
+
 @media (max-width: 768px) {
     .header-office, .container-contact-header{
         flex-direction: column;
@@ -154,19 +164,31 @@ strong.gap{
     }
 
     .navbar-brand{
-        margin-right: 30vw;
+        margin-right: 35vw;
     }
 
     .navbar-toggler{
-        margin-left: 30vw;
+        margin-left: 22vw;
     }
 
     strong.gap{
         display: none;
     }
 
+    .mx-auto.d-block.flex-sm-nowrap{
+        display: block !important;
+        width: 85%;
+        margin: auto;
+    }
 
+    
   }
+
+  @media (max-width: 488px){
+    .navbar-toggler{
+        margin-left: 12vw;
+    }
+}
 
   @media (max-width: 1100px) {
     .container-contact-header{
@@ -197,6 +219,7 @@ strong.gap{
         margin-bottom: 0rem;
     }
   }
+
 
   /* end style Header--------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -323,20 +346,7 @@ strong.gap{
     gap: 2rem;
   }
 
-.navbar-toggler.collapsed{
-    margin-top: 1rem;
-    /* float: left; */
-}
 
-#navbarCollapse{
-    width: 100%;
-    justify-content: left;
-    margin-top: 1rem;
-    align-items: flex-start;
-    text-align: start;
-    float: left;
-    margin-left: 2rem;
-  }
 
   @media (max-width: 480px) {
     .container-more-about{
@@ -369,6 +379,7 @@ strong.gap{
         grid-template-rows: auto;
         margin: 0 auto;
         align-items: flex-start;
+        max-width: 30;
     }
 
     .row.about-home{
@@ -399,6 +410,31 @@ strong.gap{
         margin: 0.1rem;
 
     }
+
+    .navbar-toggler.collapsed{
+        margin-top: 1rem;
+       
+    }
+    
+    #navbarCollapse{
+        width: 100%;
+        justify-content: left;
+        margin-top: 1rem;
+        align-items: flex-start;
+        text-align: start;
+        float: left;
+        margin-left: 2rem;
+      }
+
+      .navbar-toggler-icon{
+        align-self: center;
+        justify-self: center;
+      }
+
+      button.navbar-toggler{
+        margin-top: 1rem;
+      }
+      
 }
 
 @media (max-width: 990px){
@@ -435,6 +471,13 @@ strong.gap{
     margin: auto;
     align-items: center;
     justify-content: center;
+    
+}
+
+.fun-text{
+ letter-spacing: 1px;
+ font-weight: 20pt;
+ font-family: Oswald,sans-serif;;
 }
 
 .counter{
