@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@900&family=Nunito+Sans:wght@1000&display=swap');
+
+.main-home{
+    display: flex;
+}
+
+/* kiri------------------------------------------------------------- */
+.home-kiri{
+    width: 60%;
+}
+
+/* baris 1 gambar kiri */
+.home-img-logo{
+    background-image: url(./images/pintu.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.home-img-logo a{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.home-img-logo h2{
+    font-size: 1.8rem;
+}
+
+.home-img-link img{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 4rem;
+}
+
+/* baris 2 gambar kiri */
+.branding-word h2{
+    font-size: 2.3rem;
+    font-weight: 800;
+    text-align: center;
+    background-color: #333;
+    padding: 1.5rem 0;
+    color: #B68D40;
+    letter-spacing: 2px;
+}
+
+/* baris 3 gambar kiri */
+.secondary-img-home{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.secondary-img-img1, .secondary-img-img2{
+    /* background-image: url(./images/home-carousel-1.png); */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondary-img-img2{
+    justify-content: right;
+}
+
+.secondary-img-img1 img, .secondary-img-img2 img{
+    /* background-image: url(./images/home-carousel-2.png); */
+    width:97%;
+}
+
+
+/* kanan------------------------------------------------------------- */
+.home-kanan{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 38%;
+    justify-content: right;
+    align-items: end;
+}
+
+.third-img-home{
+    width: 95%;
+    height: 60vh;
+    background-image: url(./images/open-door.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.third-img-home h2{  
+    position: absolute;
+    bottom: -6%;
+    right: 15%;
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 1rem;
+}
+
+/* deskripsi tentang */
+.description-home{
+   width: 95%;
+   padding: 1rem 4rem 3rem;
+   box-sizing: border-box;
+   background-color: rgba(255, 255, 255, 0.247);
+   margin: 1rem 0;
+   font-size: 1.5rem;
+}
+
+.description-home p{ 
+    border-bottom: solid #B68D40 1px;
+    padding: 2rem 0;
+    color: #ffffff;
+}
+
+.contact-home{
+    width: 95%;
+    padding: 1rem 4rem 3rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.247);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+ }
+
+ .contact-home{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 3rem 0;
+ }
+
+ .contact-home div{
+    padding: 1rem;
+    max-width: 100%;
+ }
+
+ .contact-home hr{
+    /* height: 2px; */
+    background-color: #5f4411;
+ }
+
+@media screen and (max-width: 912px) {
+    .main-home{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .home-kiri{
+        width: 100%;
+    }
+
+    /* home kanan */
+    .home-kanan{
+        width: 100%;
+    }
+
+    .contact-home,
+    .third-img-home,
+    .description-home{
+        width: 100%;
+    }
+
+    .third-img-home h2{
+        right: 25%;
+    }
+    
+}
