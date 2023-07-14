@@ -36,8 +36,8 @@ main{
 }
 
 .logo-header img{
-    background-color: white;
-    width: 7rem;
+    /* background-color: white; */
+    width: 13rem;
     padding: 0.5rem;
     border-radius: .5rem;
 }

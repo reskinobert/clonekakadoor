@@ -7,20 +7,25 @@
 /* kiri------------------------------------------------------------- */
 .home-kiri{
     width: 60%;
+    margin-top: 1rem;
 }
 
 /* baris 1 gambar kiri */
 .home-img-logo{
-    background-image: url(./images/pintu.jpg);
+    background-image: url(./images/pintu-2.jpg);
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 87vh;
 }
 
 .home-img-logo a{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    /* margin: 1rem; */
+    background-color: rgba(0, 0, 0, 0.26);
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .home-img-logo h2{
@@ -80,7 +85,7 @@
 
 .third-img-home{
     width: 95%;
-    height: 60vh;
+    height: 58vh;
     background-image: url(./images/open-door.jpg);
     background-size: cover;
     background-position: center;
@@ -98,30 +103,40 @@
     padding: 1rem;
 }
 
-/* deskripsi tentang */
+/* deskripsi tentang -------- */
 .description-home{
    width: 95%;
    padding: 1rem 4rem 3rem;
    box-sizing: border-box;
    background-color: rgba(255, 255, 255, 0.247);
    margin: 1rem 0;
-   font-size: 1.5rem;
 }
 
 .description-home p{ 
     border-bottom: solid #B68D40 1px;
-    padding: 2rem 0;
+    padding: 0 0 2rem;
     color: #ffffff;
+    hyphens: auto;
+    text-align: justify;
 }
 
+.description-home h1{
+    font-size: 60px;
+}
+
+/* kontak-------------- */
 .contact-home{
     width: 95%;
     padding: 1rem 4rem 3rem;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.247);
     margin: 1rem 0;
-    font-size: 1.5rem;
  }
+
+ .description-home p, .description-home a{
+    font-size: 25px;
+ }
+
 
  .contact-home{
     font-size: 1.5rem;
@@ -163,6 +178,55 @@
 
     .third-img-home h2{
         right: 25%;
+    }  
+}
+
+@media screen and (max-width: 1400px) {   
+    .home-img-logo a h2{
+        font-size: 1.3rem;
     }
-    
+
+    .description-home{
+        padding: 1rem 4rem 2rem;
+    }
+
+    .description-home p,
+    .description-home a
+    {
+        font-size: 30px;
+    }
+
+    .description-home h1
+    {
+        font-size: 60px;
+    }
+
+    .description-home p{
+        margin-top: 0.7rem;
+    }
+
+    .contact-home div {
+        padding: 0;
+     }
+
+     .contact-home div a{
+        font-size: 0.8rem;
+     }
+
+     .contact-home{
+        padding: 1rem 0;
+     }
+}
+
+@media screen and (max-width: 1600px) {
+    .branding-word h2{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .description-home{
+        padding: 35px;
+    }
 }
