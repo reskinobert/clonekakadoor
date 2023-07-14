@@ -117,6 +117,9 @@
     padding: 0 0 2rem;
     color: #ffffff;
     hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
     text-align: justify;
 }
 
