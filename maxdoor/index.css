@@ -265,3 +265,30 @@
 .home-img-logo img{
     max-width: 100%;
 }
+
+
+@media screen and (min-width: 913px) {
+    .main-home{
+        flex-direction: column;
+    }
+
+    .home-kiri{
+        width: 100%;
+    }
+
+    .home-kanan{
+        width: 100%;
+    }
+
+    .description-home{
+        width: 100%;
+    }
+
+    .copy-right{
+        text-align: center;
+    }
+
+    .main-home{
+        margin-bottom: 1.5rem;
+    }
+}
