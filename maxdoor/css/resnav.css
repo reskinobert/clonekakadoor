@@ -28,7 +28,7 @@
   }
   
   .dropdown .dropbtn {
-    font-size: 30px;    
+    font-size: 20px;    
     border: none;
     outline: none;
     color: #B68D40;
@@ -98,6 +98,15 @@
       font-size: 1.5rem !important;
       padding-top: 0.5rem;
     }
+
+    .border-navbar{
+      display: none;
+    }
+
+    .topnav.responsive{
+      max-width: 100%;
+      margin-left: 1.5rem;
+    }
   }
   
   @media screen and (max-width: 912px) {
@@ -130,7 +139,7 @@
     .topnav{
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        /* width: 70%; */
         margin: auto;
         gap: 0;
     }
@@ -156,5 +165,13 @@
   .dropdown-content a{
     width: 100%;
     text-align: center;
+  }
+
+  @media screen and (min-width: 913px) {
+    .topnav a, .topnav .dropdown.get-border .dropbtn{
+      max-width: 100%;
+      font-size: 18px;
+      box-sizing: border-box;
+    }
   }
   
