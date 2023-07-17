@@ -291,4 +291,35 @@
     .main-home{
         margin-bottom: 1.5rem;
     }
+
+
+    /* all text */
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    .description-home h1{
+        font-size: 42px !important;
+    }
+
+    .home-kanan p, .home-kanan a span{
+        font-size: 22px !important
+    }
+
+
+    /* footer */
+    .p-footer{
+        font-size: 12px !important; 
+        /* white-space: nowrap; */
+    }
+
+}
+
+
+@media screen and (min-width: 1500px) {
+    .p-footer{
+        font-size: 18px !important; 
+        white-space: nowrap;
+    }
 }
