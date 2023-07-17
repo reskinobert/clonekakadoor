@@ -197,7 +197,7 @@
     /* home kanan */
     .home-kanan{
         width: 100%;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .contact-home,
