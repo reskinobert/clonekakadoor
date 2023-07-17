@@ -153,10 +153,36 @@
     max-width: 100%;
  }
 
- .contact-home hr{
-    /* height: 2px; */
+ /* .contact-home hr{
+    height: 2px;
     background-color: #5f4411;
+ } */
+
+ .email-home, 
+ .telp-home, 
+ .addres-home {
+    width: 75%;
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
+    color: white;
+    
  }
+
+ .email-home a, 
+ .telp-home a, 
+ .addres-home a {
+    text-align: left;
+ }
+
+ .telp-home{
+    border-bottom: solid #B68D40 1px;
+    border-top: solid #B68D40 1px;
+    padding: 1rem 0;
+ }
+
 
 @media screen and (max-width: 912px) {
     .main-home{
@@ -171,6 +197,7 @@
     /* home kanan */
     .home-kanan{
         width: 100%;
+        flex-direction: column;
     }
 
     .contact-home,
