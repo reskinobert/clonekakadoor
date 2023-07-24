@@ -54,7 +54,7 @@
     color: transparent;
 }
 
-.figcaption:hover{
+.figcaption:hover, .figcaption:active{
     background-color: #000000ce;
     color: white;
     transition: 0.5s;
