@@ -470,7 +470,7 @@ const apiResult = [
                       class="img-responsive"
                       width="500px"
                   />
-                  <div class="figcaption">
+                  <div class="figcaption" onclick="">
                       <h3 style="font-size: .8em;">${result.name}</h3>
                   </div>
               </div>               
