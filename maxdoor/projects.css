@@ -44,9 +44,14 @@
 /* text project---------- */
 .figcaption{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    top: 0%;
+    left: 0%;
+    /* transform: translateY(-50%) translateX(-50%); */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: transparent;
     text-align: center;
     width: 100%;
     height: 100%;
