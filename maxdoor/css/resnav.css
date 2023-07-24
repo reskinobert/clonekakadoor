@@ -14,7 +14,7 @@
   }
   
   .active {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
   }
   
@@ -80,8 +80,9 @@
 
   
   @media screen and (max-width: 912px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+    .topnav a, .dropdown .dropbtn {
       display: none;
+      /* a:not(:first-child) */
     }
     .topnav a.icon {
       float: right;
@@ -89,13 +90,13 @@
       margin: auto
     }
   
-    .home-nav{
+    /* .home-nav{
         display: none !important;
-    }
+    } */
 
     .topnav{
       position: absolute;
-      top: 4%;
+      top: 2.5%;
       right: 4%;
     }
 
