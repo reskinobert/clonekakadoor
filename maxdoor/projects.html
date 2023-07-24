@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     
     <!-- css link -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/resnav.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -69,65 +69,43 @@
         <!-- end nav ---------------------------------------------------------------------------------------->
     </header>
     <!-- end header ----------------------------------------------------------------------------------------->
-
+    <div class="container-judul-project">
+        <h1 class="judul-all">
+            Project List
+        </h1>
+    </div>
 
 <!-- main --------------------------------------------------------------------------------------------------->  
-    <main class="main-home">
-        <div class="home-kiri">
-            <div class="branding-word">
-                <h2 style="font-size: 16px;">ENGINEERING DOOR SPECIALIST</h2>
-            </div>
-
-            <div class="secondary-img-home">
-                <div class="secondary-img-img1">
-                    <img src="./images/home-carousel-1.png" alt="">
-                </div>
-                <div class="secondary-img-img2">
-                    <img src="./images/home-carousel-2.png" alt="">
-                </div>
-            </div>     
+    <section id="contact-info" class="page-section transparent">
+       
+        <div class="filter">
+            <button class="button button_hospital" data-filter="hospital" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                </svg>
+                HOSPITALS/SCHOOLS
+            </button>
+            <button class="button button_residence" data-filter="residence" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                </svg>
+                RESIDENCES
+            </button>
+            <button class="button button_hotel" data-filter="hotel" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+                    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                </svg>
+                HOTELS/TOWERS
+            </button>
         </div>
 
-        <div class="home-kanan">
-            <div class="description-home">
-                <h1 style="margin-bottom: 0; color: white; font-size: 24px;">Max Door</h1>
-                <p style="color: white; font-size: 14px; line-height: 1.5em; padding-top: 10px; letter-spacing: .5px; hyphens: auto;">
-                    PT Sinar Cemerlang Alamindo dengan produk Max Door 
-                    berfokus untuk memproduksi berbagai jenis pintu
-                    dengan kualitas tinggi selama lebih dari 10 tahun. 
-                </p>
-                <a href="about.html" style="color: #B68D40; font-size: 14px; display: flex; gap: 15px;">
-                    <span style="color: #B68D40; font-size: 15px;">Read more</span> 
-                    <span style="color: #B68D40; font-size: 15px;">>></span>
-                    
-                </a>
-            </div>
+
+        <div class="container-general-section">
+            <div id="mix-container" class="container-projects">
+            
+            </div>   
         </div>
-
-        <div class="home-img-logo">
-
-            <img src="./images/const-home.jpg" alt="">
-            <a class="home-img-link" href="./produk/products.html">
-                <h2 style="color: #B68D40; font-size: 20px; display: flex; align-items: center; gap: 15px;">
-                    <span>Product Info</span>   
-                    <span style="color: #B68D40; font-size: 15px;">>></span>
-                </h2>
-            </a>
-        </div>
-
-        <div class="home-img-logo" style="margin-top: 15px;">
-
-            <img src="./images/building.jpg" alt="">
-            <a class="home-img-link" href="projects.html">
-                <h2 style="color: #B68D40; font-size: 20px; display: flex; align-items: center; gap: 15px;">
-                    <span>Our Projects</span>   
-                    <span style="color: #B68D40; font-size: 15px;">>></span>
-                </h2>
-            </a>
-        </div>
-
-        
-    </main>
+    </section>
     <!-- end main --------------------------------------------------------------------------------------->
 
     <hr>
@@ -210,5 +188,6 @@
     <!-- end footer -------------------------------------------------------------------------------------->
 
     <script src="index.js"></script>
+    <script src="project.js"></script>
 </body>
 </html>

@@ -1,0 +1,212 @@
+.title-product{
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+    border-bottom: solid #B68D40 1px;
+    padding-top: 0.2rem;
+    width: 100vw;
+    display: flex !important;
+    margin-left: 0 !important;
+    align-self: center;
+}
+
+.title-product h1{
+    font-weight: 820;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.form-contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-container{
+    width: 95%;
+}
+
+.kontak-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #333;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-contact-us{
+    width: 100%;
+}
+
+label{
+    /* margin: 1rem 0 !important; */
+    color: #B68D40;
+}
+
+input{
+    margin-top: 8px;
+    width: 95%;
+    height: 2rem;
+    padding: 5px;
+    max-width: 100%;
+    font-size: 16px;
+}
+
+textarea{
+    margin-top: 8px;
+    width: 95%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.contac-us-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+
+}
+
+button{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 12px;
+    background-color: #B68D40;
+    color: white;
+    /* box-shadow: none; */
+}
+
+/* maps------------------------------------ */
+.contact-maps{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2rem 0;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+h3{
+    margin-top: 0.5rem;
+    margin-bottom:1rem;
+    color: #B68D40;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.contact-all{
+    display: flex;
+    gap: 3.5rem;
+    border-bottom: solid #B68D40 1px;
+}
+
+.divider{
+    border-bottom: dashed white 1px;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    width: 100% !important;
+}
+
+.p-contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 0;
+}
+
+.p-contact strong svg{
+    padding-right: 5px;
+}
+
+.p-contact.maps{
+    margin: 0.8rem 0 5px 0;
+}
+
+.p-contact strong{
+    padding-bottom: 5px;
+}
+
+
+
+/* footer-contac us */
+.copy-right{
+    text-align: center;
+    font-size: 12px;
+}
+
+strong{ 
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.office{
+    border: solid #B68D40 1px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+iframe{
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    /* .contact-container{
+        width:90%;
+    } */
+
+    h2{
+        margin-top: 0;
+    }
+
+    .form-contact-us{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contac-us-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kontak-container, .contact-maps{
+        width: 100%;
+    }
+
+    .contact-all{
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .contact-maps{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-container{
+        width: 90%;
+    }
+
+    .contac-us-container {
+        gap: 0;
+    }
+    
+    h3{
+        margin-top: 0;
+    }
+
+    .divider{
+        margin:0 0 1rem 0;
+        padding: 0.8rem 0;
+    }
+}
