@@ -1,0 +1,138 @@
+.products-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.description-product-img{
+    width: 30%;
+}
+
+.description-product-img img{
+    max-width: 100%;
+}
+
+.all-description{
+    width: 50%;
+}
+
+.excess li{
+    color: #B68D40;
+    list-style-type: circle;
+}
+
+.description-title h2, .value-title h2{
+    border-bottom: solid #B68D40 1px;
+    border-top: solid #B68D40 1px;
+    padding: 0 5px;
+}
+
+.description-product, .value-product{
+    margin: 1rem;
+}
+
+
+.title-product{
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+    border-bottom: solid #B68D40 1px;
+    padding-top: 0.2rem;
+    width: 100vw;
+    display: flex !important;
+    margin-left: 0 !important;
+    align-self: center;
+}
+
+.title-product h1{
+    font-weight: 820;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .products-container{
+        flex-direction: column;
+    }
+
+    .all-description{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .products-container{
+        width: 95%;
+        gap: 1rem;
+    }
+
+    ul{
+        padding-left: 20px;
+    }
+}
+
+.meaning-product p,
+.meaning-value p, 
+ul li{
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    text-align: justify;
+    /* letter-spacing: 0.3px; */
+    word-spacing: 1px;
+    font-size: 14px;
+}
+
+
+
+/* PRODUCT FRONT */
+.list-sub-product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.maxdoor-container h2{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #333;
+    padding: 0.5rem;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.maxdoor-container{
+    width: 30%;
+}
+
+.maxdoor-container img{
+    max-width: 100%;
+}
+
+.btn.btn-default{
+    /* margin-top: -2rem !important; */
+    max-height: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+    .maxdoor-container h2{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .maxdoor-container h2{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .maxdoor-container h2{
+        font-size: 10px;
+    }
+}
