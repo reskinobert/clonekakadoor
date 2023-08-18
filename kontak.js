@@ -7,9 +7,6 @@ function sendEmail() {
     pesan: document.getElementById("pesan").value,
     };
 
-  const serviceID = "service_0di1n8l";
-  const templateID = "template_q7xo7ti";
-
   emailjs
   .send (serviceID, templateID, params)
   .then(
